@@ -1,4 +1,4 @@
-package spring_sucurity_2024.demo;
+package com.example;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

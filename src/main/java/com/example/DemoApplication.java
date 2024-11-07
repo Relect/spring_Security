@@ -1,4 +1,4 @@
-package spring_sucurity_2024.demo;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
