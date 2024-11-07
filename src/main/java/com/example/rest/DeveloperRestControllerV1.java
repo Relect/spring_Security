@@ -4,6 +4,8 @@ import com.example.model.Developer;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -11,11 +13,11 @@ import java.util.stream.Stream;
 @RestController
 @RequestMapping("api/v1/developers")
 public class DeveloperRestControllerV1 {
-    private List<Developer> DEVELOPERS = Stream.of(
+    private List<Developer> DEVELOPERS = new ArrayList<>(Arrays.asList(
             new Developer(1L, "Ivan", "Ivanov"),
             new Developer(2L, "Sergey", "Sergeev"),
             new Developer(3L, "Petr", "Petrov")
-    ).toList();
+    ));
 
     @GetMapping
     public List<Developer> getAll() {
