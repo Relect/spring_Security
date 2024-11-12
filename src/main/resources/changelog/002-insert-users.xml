@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+    <changeSet id="insert" author="Romanov Gennady">
+        <insert tableName="users">
+            <column name="email" value="user@mail.ru"/>
+            <column name="password" value="$2a$12$lfzzWzaxYQCApF/AWz3Rj.tdo5jaSjTNwjXjCaLisLY6F7xkIjiVK" />
+            <column name="first_name" value="Ivanov"/>
+            <column name="last_name" value="Ivan"/>
+            <column name="role" value="USER"/>
+            <column name="status" value="BANNED"/>
+        </insert>
+        <insert tableName="users">
+            <column name="email" value="admin@mail.ru"/>
+            <column name="password" value="$2a$12$fLOtpQtqnWsKsmv2JVMgt.amYUct7eaHghk4ny7.kJNtNGkpMpWO2" />
+            <column name="first_name" value="Petrov"/>
+            <column name="last_name" value="Petr"/>
+            <column name="role" value="ADMIN"/>
+            <column name="status" value="ACTIVE"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

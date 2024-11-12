@@ -1,4 +1,4 @@
-package com.example.rest;
+package com.example.controller;
 
 import com.example.model.Developer;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @RestController
 @RequestMapping("api/v1/developers")
